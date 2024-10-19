@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator - INR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h2>Tax Calculator (INR)</h2>
+            <form id="taxForm">
+                <label for="income">Enter your income (₹):</label>
+                <input type="number" id="income" name="income" placeholder="Income in ₹" required>
+
+                <label for="taxRate">Enter tax rate (%):</label>
+                <input type="number" id="taxRate" name="taxRate" placeholder="Tax Rate in %" required>
+
+                <button type="button" onclick="calculateTax()">Calculate</button>
+            </form>
+
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
